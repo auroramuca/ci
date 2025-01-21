@@ -34,4 +34,19 @@ class CalculatorTest {
         assertNotEquals(9, calculator.divide(32,4));
         assertThrows(DivideByZeroException.class, () -> calculator.divide(12, 0));
     }
+
+    @Test
+    public void testCalculateSquareRoot() {
+        Calculator calculator = new Calculator();
+
+        // Test für positive Zahlen
+        assertEquals(2.0, calculator.calculateSquareRoot(4.0), 0.0001);
+        assertEquals(3.0, calculator.calculateSquareRoot(9.0), 0.0001);
+
+        // Test für 0
+        assertEquals(0.0, calculator.calculateSquareRoot(0.0), 0.0001);
+
+        // Test für negative Zahlen (sollte Exception werfen)
+        assertThrows(IllegalArgumentException.class, () -> calculator.calculateSquareRoot(-4.0));
+    }
 }
