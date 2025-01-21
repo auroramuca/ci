@@ -48,4 +48,11 @@ class CalculatorTest {
         // Test für negative Zahlen (sollte Exception werfen)
         assertThrows(IllegalArgumentException.class, () -> calculator.calculateSquareRoot(-4.0));
     }
+    @Test
+    public void testtoBinary() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.toBinary(-5);
+        });
+        assertEquals("Number must be non-negative.", exception.getMessage());
+    }
 }

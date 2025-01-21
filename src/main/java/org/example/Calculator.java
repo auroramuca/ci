@@ -20,4 +20,11 @@ public class Calculator {
         }
         return Math.sqrt(number);
     }
+
+    public String toBinary(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Number must be non-negative.");
+        }
+        return Integer.toBinaryString(number);
+    }
 }
