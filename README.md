@@ -17,3 +17,5 @@ Die Klasse `Calculator` enthält vier Methoden:
 
 4. **Division**
    - Dividiert die erste Zahl durch die zweite.
+  
+   [![Java CI](https://github.com/auroramuca/ci/actions/workflows/ci.yml/badge.svg)](https://github.com/auroramuca/ci/actions/workflows/ci.yml)
