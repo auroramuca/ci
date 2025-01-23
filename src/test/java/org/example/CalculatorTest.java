@@ -55,4 +55,11 @@ class CalculatorTest {
         });
         assertEquals("Number must be non-negative.", exception.getMessage());
     }
+
+    @Test
+    void testSquare() {
+        assertEquals(16, calculator.square(4));
+        assertEquals(0, calculator.square(0));
+        assertEquals(1, calculator.square(1));
+    }
 }

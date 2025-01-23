@@ -27,4 +27,8 @@ public class Calculator {
         }
         return Integer.toBinaryString(number);
     }
+
+    public int square(int number) {
+        return number * number;
+    }
 }
